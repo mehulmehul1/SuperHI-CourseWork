@@ -1,0 +1,268 @@
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.section-home {
+  z-index: 5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.div-header {
+  position: fixed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1em;
+  line-height: 1;
+  text-align: center;
+}
+
+.h1-hero {
+  font-size: 9.6em;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+.h2-subhead {
+  margin-top: 0px;
+  font-size: 2em;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+.body {
+  font-family: Maziusreview, sans-serif;
+  font-weight: 400;
+}
+
+.header-bar {
+  width: 6em;
+  height: 0.3em;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #000;
+}
+
+.h1-jessie {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.section {
+  z-index: 6;
+  padding: 12.5em;
+}
+
+.h1-title {
+  margin-top: 0px;
+  font-size: 3em;
+  line-height: 1.25;
+}
+
+.title-padding {
+  margin-top: 20px;
+}
+
+.image {
+  position: fixed;
+  left: 50%;
+  top: auto;
+  right: 50%;
+  bottom: 5%;
+}
+
+.container-blob {
+  z-index: 54;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.container-blob.purple {
+  display: block;
+}
+
+.container-blob.red {
+  display: block;
+}
+
+.container-blob.white {
+  display: block;
+}
+
+.blob {
+  position: fixed;
+  z-index: 10;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  mix-blend-mode: multiply;
+}
+
+.blob._2 {
+  left: auto;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+}
+
+.blob._2.purple {
+  mix-blend-mode: multiply;
+}
+
+.blob.pink {
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
+  mix-blend-mode: multiply;
+}
+
+.blob.pink.full {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+
+.blob.purple {
+  -webkit-transform: translate(900px, 300px) scale(0);
+  -ms-transform: translate(900px, 300px) scale(0);
+  transform: translate(900px, 300px) scale(0);
+  mix-blend-mode: multiply;
+}
+
+.blob.red {
+  -webkit-transform: translate(-1000px, 1111px) scale(0);
+  -ms-transform: translate(-1000px, 1111px) scale(0);
+  transform: translate(-1000px, 1111px) scale(0);
+  mix-blend-mode: multiply;
+}
+
+.blob.white {
+  -webkit-transform: translate(-801px, 500px) scale(0);
+  -ms-transform: translate(-801px, 500px) scale(0);
+  transform: translate(-801px, 500px) scale(0);
+  mix-blend-mode: multiply;
+}
+
+.container-blob-all {
+  display: block;
+}
+
+.sec-img {
+  -webkit-filter: contrast(125%) brightness(125%) grayscale(100%);
+  filter: contrast(125%) brightness(125%) grayscale(100%);
+}
+
+@media screen and (max-width: 767px) {
+  .h1-hero {
+    font-size: 7em;
+  }
+
+  .h2-subhead {
+    font-size: 1.5em;
+  }
+
+  .section.a {
+    padding: 6em 6em 12em;
+  }
+
+  .section.b {
+    padding: 6em 6em 12em;
+  }
+
+  .section.c {
+    padding: 6em 6em 12em;
+  }
+
+  .section.d {
+    padding: 6em 6em 12em;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .h1-hero {
+    font-size: 5em;
+  }
+
+  .h2-subhead {
+    padding-right: 64px;
+    padding-left: 64px;
+    font-size: 3em;
+  }
+
+  .section.a {
+    padding: 2em 2em 6em;
+  }
+
+  .section.b {
+    padding: 2em 2em 6em;
+  }
+
+  .section.c {
+    padding: 2em 2em 6em;
+  }
+
+  .section.d {
+    padding: 2em 2em 6em;
+  }
+}
+
+@font-face {
+  font-family: 'Maziusreview';
+  src: url('../fonts/maziusreview-extraitalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Maziusreview';
+  src: url('../fonts/maziusreview-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
